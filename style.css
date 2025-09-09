@@ -1,0 +1,71 @@
+h1 {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+  }
+  
+  h2 {
+    padding: 10px;
+    font-family: "Michroma", sans-serif;
+  }
+  
+  h3 {
+    padding: 10px;
+    font-family: "Michroma", sans-serif;
+  }
+  
+  p {
+    padding: 10px;
+    word-break: break-word;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .main-buttons button {
+    background-color: #6f60b0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  button:hover {
+    background-color: #4a28dd;
+  }
+  
+  .main-buttons button:hover {
+    transform: scale(1.05);
+  }
+  
+  .main-buttons button::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: 8px;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-buttons button:hover::after {
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 600px) {
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+  }
