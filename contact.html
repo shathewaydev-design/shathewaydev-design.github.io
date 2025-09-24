@@ -19,6 +19,106 @@
   
     body {
       margin: 0;
-      background-color: lightblue;
+      background-color: #2F2D59;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      /* horizontal */
+      /*align-items: center; vertical */
+      width: 100%;
+      /* full viewport height */
+      background-color: #5A55AA;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+  
+    .main-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 30px;
+      gap: 5%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2%;
+      padding-right: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: #5A55AA;
+      max-width: 100%;
+      box-sizing: border-box;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+  
+    .main-buttons button {
+      flex: 1 1 150px;
+      /* grow, shrink, base width */
+      max-width: 150px;
     }
 </style>
+
+<div class="center-container">
+    <div style="padding: 30px;">
+      <h1 style="text-align: center;">Sophia Hatheway</h1>
+      <h2 style="text-align: center;">Game Designer & Developer</h2>
+    </div>
+  </div>
+
+   <div class="main-buttons">
+  <div style="padding: 10px;">
+    <a href="index.html">
+      <button>
+        Home
+      </button>
+    </a>
+  </div>
+  <div style="padding: 10px">
+    <a href="projects.html">
+      <button>
+        My Works
+      </button>
+    </a>
+  </div>
+  <div style="padding: 10px">
+    <a href="about.html">
+      <button>
+        About Me
+      </button>
+    </a>
+  </div>
+  <div style="padding: 10px">
+    <a href="contact.html">
+      <button>
+        Contact Me
+      </button>
+    </a>
+  </div>
+</div>
+
+   <div class="contact-container" style="text-align: center;">
+    <div>
+      <h3>
+        Contact Me
+      </h3>
+    </div>
+    <div>
+      <p>
+        contact info here!!! (clean up later)
+        Email: shatheway.dev@gmail.com
+        LinkedIn: https://www.linkedin.com/in/sophia-hatheway-28261a383/
+        Githhub: shathewaydev-design
+        Discord: shatheway
+        itch.io: https://shathewaydevdesign.itch.io
+      </p>
+    </div>
+  </div>
+
