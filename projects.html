@@ -1,79 +1,83 @@
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  
-    body {
-      margin: 0;
-      background-color: #2F2D59;
-    }
-    .center-container {
-      display: flex;
-      justify-content: center;
-      /* horizontal */
-      /*align-items: center; vertical */
-      width: 100%;
-      /* full viewport height */
-      background-color: #5A55AA;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    }
-  
-    .main-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      padding: 30px;
-      gap: 5%;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-  
-    .project-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 2%;
-      padding-right: 2%;
-      margin-left: 5%;
-      margin-right: 5%;
-      background-color: #5A55AA;
-      max-width: 100%;
-      box-sizing: border-box;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      border-radius: 8px;
-    }
-  
-    .main-buttons button {
-      flex: 1 1 150px;
-      /* grow, shrink, base width */
-      max-width: 150px;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #2F2D59;
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    /*align-items: center; vertical */
+    width: 100%;
+    /* full viewport height */
+    background-color: #5A55AA;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .main-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    gap: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #5A55AA;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
+
+  .main-buttons button {
+    flex: 1 1 150px;
+    /* grow, shrink, base width */
+    max-width: 150px;
+  }
 </style>
 
 <div class="center-container">
-    <div style="padding: 30px;">
-      <h1 style="text-align: center;">Sophia Hatheway</h1>
-      <h2 style="text-align: center;">Game Designer & Developer</h2>
-    </div>
+  <div style="padding: 30px;">
+    <h1 style="text-align: center;">Sophia Hatheway</h1>
+    <h2 style="text-align: center;">Game Designer & Developer</h2>
   </div>
+</div>
 
-   <div class="main-buttons">
+<div class="main-buttons">
   <div style="padding: 10px;">
     <a href="index.html">
       <button>
@@ -104,16 +108,46 @@
   </div>
 </div>
 
-   <div class="project-container" style="text-align: center;">
+<div class="project-container" style="text-align: center;">
+  <div>
+    <h3>
+      My Works
+    </h3>
+  </div>
+  <div>
+    <p>
+      Below are some of my projects, and you can navigate to other pages using the links at the top.
+    </p>
+
     <div>
-      <h3>
-        My Works
-      </h3>
-    </div>
-    <div>
-      <p>
-        Below are some of my projects, and you can navigate to other pages using the links at the top.
+      <h4>Project 1: Grill-A-Warfare</h4>
+      <p>A restaurant-themed first-person shooter. Developed by the indie development team LettuceCook Studios.</p>
+      <div class="image-carousel">
+        <div class="slides">
+          <img src="images/girll-a-cover.png" class="slide active" alt="Grill-A-Warfare Cover">
+          <img src="images/lettucecook.png" class="slide" alt="LettuceCook Studios Team Promo Photo">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+      </div>
+      <div style="padding: 20px;">
+        <p style="padding: 1px; justify-content: right;">Trailer: </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gFHjNEvt_IQ?si=vrmQRcdhkbGVZAx8"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <p>I was the project manager for this game, as well as providing assistence in development, and prividing UI
+        design and art.
+        As part of being the project manager, I was responsible for scheduling meetings, tracking progress, and ensuring
+        effective
+        communication among team members. I created all socials and posts for the game (Instagram, YouTube, Itch.io).
+      </p>
       </p>
     </div>
-  </div>
 
+  </div>
+</div>
+
+<script src="script.js"></script>
