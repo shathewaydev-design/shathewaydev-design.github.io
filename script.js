@@ -1,13 +1,35 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+document.querySelectorAll('.img-carousel').forEach(carousel => {
+  const track = carousel.querySelector('.project-imgs');
+  const slides = carousel.querySelectorAll('.project-imgs img');
+  const prevBtn = carousel.querySelector('.prev');
+  const nextBtn = carousel.querySelector('.next');
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
+  let index = 0;
+  const slideWidth = 800; // hard-coded width
+  const slideHeight = 500; // optional, if needed for calculations
+
+  function updateSlide() {
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateSlide();
   });
-}
 
-function changeSlide(direction) {
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlide();
+  });
+
+  // optional: ignore resize now since it's fixed
+});
+
+
+
+document.querySelectorAll('.project-name').forEach(button => {
+  button.addEventListener('click', () => {
+    const project = button.closest('.project-container');
+    project.classList.toggle('open');
+  });
+});

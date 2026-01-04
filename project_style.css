@@ -1,0 +1,132 @@
+.trailer video {
+    border: #F3E9DC 4px dotted;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.project-intro {
+    text-align: center
+}
+
+.project-container {
+    border: #F3E9DC 2px solid;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #502F4C;
+    background: linear-gradient(to bottom left, #70587C, #502F4C);
+
+}
+
+.project-container .project-name {
+    font-family: "Poiret One", sans-serif;
+    font-size: 18px;
+    background-color: #C8B8DB;
+    color: #502F4C;
+    border: #F3E9DC 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.project-container .project-name:hover {
+    background-color: #8A00C4;
+    color: #F3E9DC;
+    transform: scale(1.1);
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+/* When expanded */
+.project-container.open .project-details {
+    max-height: 3000px;
+    /* large enough to fit content */
+}
+
+.img-carousel {
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+    margin: auto;
+    border: #F3E9DC 4px dotted;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-carousel img {
+    width: 800px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.project-imgs {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* smooth slide */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.trailer {
+    font-family: "Poiret One", sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.trailer iframe {
+    border: #F3E9DC 4px dotted;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-info li a {
+    color: #F3E9DC;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #F3E9DC;
+    cursor: pointer;
+}
+
+.project-info li a:hover {
+    /* "Blow up" effect */
+    color: #8A00C4;
+    /* Change button color */
+    border-color: #8A00C4;
+}
+
+.project-info li {
+  text-decoration: none;
+}
