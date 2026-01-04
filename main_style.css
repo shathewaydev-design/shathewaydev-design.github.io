@@ -2,17 +2,24 @@ html,
 body {
     height: 100%;
     margin: 0;
-
+    overflow-x: hidden;
 }
 
 body {
     background: linear-gradient(to bottom left, #70587C, #502F4C);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    /* ✅ stop tiling */
+    background-attachment: fixed;
+    /* ✅ fix the background */
 
 }
 
 
 .background {
     display: flex;
+    flex-direction: column;
 
 }
 
@@ -119,6 +126,14 @@ body {
     background-color: #8A00C4;
     /* Change button color */
 }
+
+.footer {
+    background: #502F4C;
+    color: #F3E9DC;
+    text-align: center;
+    padding: 1rem;
+}
+
 
 .main-content {
     margin: 20px;

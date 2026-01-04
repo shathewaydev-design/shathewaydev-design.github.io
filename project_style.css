@@ -130,3 +130,14 @@
 .project-info li {
   text-decoration: none;
 }
+
+.footer {
+    display: flex;
+    background: #C8B8DB;
+    color: #502F4C;
+    text-align: center;
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;                                           
+}
