@@ -1,0 +1,54 @@
+.contact-intro {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-bottom: 2px dashed #F3E9DC;
+    padding-bottom: 5px;
+}
+
+.contact-list li a {
+    color: #502F4C;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #502F4C;
+    /* Smooth animation */
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.contact-list li a:hover {
+    color: #502F4C;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #502F4C;
+    cursor: pointer;
+
+    transform: scale(1.2);
+    /* "Blow up" effect */
+    color: #8A00C4;
+    /* Change button color */
+    border-color: #8A00C4;
+}
