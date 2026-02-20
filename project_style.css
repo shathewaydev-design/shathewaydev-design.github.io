@@ -1,3 +1,15 @@
+
+body {
+    background: linear-gradient(to bottom left, #70587C, #502F4C);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    /* ✅ stop tiling */
+    background-attachment: fixed;
+    /* ✅ fix the background */
+
+}
+
 .trailer video {
     border: #F3E9DC 4px dotted;
     border-radius: 100px;
@@ -11,6 +23,7 @@
 
 .project-container {
     border: #F3E9DC 2px solid;
+    color: #F3E9DC;
     padding: 15px;
     border-radius: 10px;
     margin: 20px;
@@ -140,4 +153,40 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;                                           
+}
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 75px;
+    background-color: #C8B8DB;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: "Volkhov", serif;
+    color: #000000;
+    max-width: 1200px;
+    min-width: 50%;
+    border: #F3E9DC 2px solid;
+    margin-bottom: 75px;
+}
+
+.main-content h3 {
+    color: #000;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.main-content p {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 1.5;
+
+
 }
