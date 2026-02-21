@@ -327,10 +327,12 @@ body {
     font-family: "Volkhov", serif;
     text-align: center;
     font-size: x-large;
+    line-height: 1.6;
 
     background: #131515;
     border-radius: 10px;
-    border: #FDF2FF 6px dotted;
+
+    box-shadow: 20px 20px 0 #280B42FF;
 
     max-width: 800px;
     padding: 40px;

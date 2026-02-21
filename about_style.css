@@ -1,98 +1,48 @@
+html,
 body {
-    background: linear-gradient(to bottom left, #70587C, #502F4C);
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    /* ✅ stop tiling */
-    background-attachment: fixed;
-    /* ✅ fix the background */
+    background-image: url("images/background_imgs/andrew-clifton-jellies-unsplash.webp");
 
 }
 
-.life-section {
-    flex-direction: column;
-    margin-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    border: #F3E9DC 2px solid;
-    border-radius: 20px;
+.title-intro {
+    margin-bottom: 40px;
 
 }
 
-.life-section h4 {
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
+
+
+.title-intro img {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    box-shadow: 20px 20px 0 #280B42FF;
+    border: 4px solid #B623FF;
+
 }
 
-.self-info {
-    display: flex;
-    flex-direction: column;
+
+.extended-content {
+    margin-top: 0;
+    clip-path: polygon(0 80px,
+            /* left top */
+            100% 0,
+            /* right top */
+            100% 100%,
+            /* bottom right */
+            0 100%
+            /* bottom left */
+        );
+ 
 }
 
-.life-pics {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 15px;
-}
-
-.life-pics img {
-
-    margin: 15px;
-    border: #F3E9DC 4px dotted;
-    border-radius: 15px;
-}
-
-.footer {
-    display: flex;
-    background: #C8B8DB;
-    color: #502F4C;
-    text-align: center;
-    padding: 1rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 15px;                                           
-}
-
-.main-content {
-    margin: 20px;
-    padding: 20px;
-    margin-top: 75px;
-    background-color: #C8B8DB;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    font-family: "Volkhov", serif;
-    color: #000000;
-    max-width: 1200px;
-    min-width: 50%;
-    border: #F3E9DC 2px solid;
-    margin-bottom: 75px;
-}
-
-.main-content h3 {
-    color: #000;
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
-    text-align: center;
-}
-
-.main-content p {
-    font-family: "Volkhov", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding: 10px;
-    line-height: 1.5;
-
-
+.float-img {
+  width: 550px;
+  margin: 0 20px 10px 0; /* space between image and text */
+  border-radius: 10px;
+  align-self: flex-start;
 }
