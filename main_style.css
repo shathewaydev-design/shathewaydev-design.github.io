@@ -6,8 +6,6 @@ body {
 }
 
 body {
-    /* background: linear-gradient(to bottom left, #70587C, #502F4C); */
-
     min-height: 100vh;
     background-image: url("images/background_imgs/sandro-katalina-purple_triangle-unsplash.webp");
     background-size: cover;
@@ -26,16 +24,6 @@ body {
     /* stop tiling */
     background-attachment: fixed;
     /* fix the background */
-
-}
-
-
-
-.background {
-    display: flex;
-    flex-direction: column;
-
-
 
 }
 
@@ -58,19 +46,22 @@ body {
     margin: auto;
     padding: 20px;
 
-    margin-top: 150px; /* space from header for parallax style -- adjust as needed */
+    margin-top: 118px;
+    /* space from header for parallax style -- adjust as needed */
 
-    min-height: 100vh;
     background: linear-gradient(to bottom left, #280B42E6, #331087E6, #B623FFE6);
     position: relative;
     z-index: 1;
 
-    clip-path: polygon(
-        0 80px,      /* left top */
-        100% 0,      /* right top */
-        100% 100%,   /* bottom right */
-        0 100%       /* bottom left */
-    );
+    clip-path: polygon(0 80px,
+            /* left top */
+            100% 0,
+            /* right top */
+            100% 100%,
+            /* bottom right */
+            0 100%
+            /* bottom left */
+        );
 }
 
 
@@ -133,48 +124,49 @@ body {
     border: #8A00C4 8px dotted;
 }
 
-.nav-bar {
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
+
+    padding: 10px 20px;
+    background: #131515;
+    color: #FDF2FF;
+    box-sizing: border-box;
+}
+
+.footer-right {
+    text-decoration: none;
+    color: #FDF2FF;
     font-family: "Volkhov", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: #F3E9DC;
-    font-size: 18px;
-    background-color: #502F4C;
-    padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border: #F3E9DC 1px solid;
     cursor: pointer;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-left: auto;
+    margin-right: 40px;
+    min-width: 0;
+    /* allows shrinking */
 
     /* Smooth animation */
     transition:
         transform 0.25s ease,
-        background-color 0.25s ease;
+        color 0.25s ease;
 }
 
-.nav-bar a:hover {
+.footer-right:hover {
     transform: scale(1.2);
     /* "Blow up" effect */
-    background-color: #8A00C4;
+    color: #A245FF;
     /* Change button color */
-}
-
-.footer {
-    background: #131515;
-    color: #FDF2FF;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
 }
 
 
@@ -219,7 +211,7 @@ body {
     width: 600px;
     height: 450px;
 
-    margin-top: 150px;  /* space from top of vh for parallax style -- adjust as needed // MOBILE!! */
+    margin-top: 150px; /* space from top of vh for parallax style -- adjust as needed // MOBILE!! */
 
     background-color: #131515;
     background: linear-gradient(to bottom left, #280B42, #131515, #331087);
@@ -342,7 +334,10 @@ body {
 
     max-width: 800px;
     padding: 40px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 
-    
+    position: relative;
+
+
 }
-
