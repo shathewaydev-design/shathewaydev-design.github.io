@@ -1,192 +1,253 @@
+html,
+body {
+    background-image: url("images/background_imgs/daniele-levis-pelusi-2nd_galaxy-unsplash.webp");
+    height: 100%;
+    margin: 0;
+
+}
 
 body {
-    background: linear-gradient(to bottom left, #70587C, #502F4C);
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    /* ✅ stop tiling */
-    background-attachment: fixed;
-    /* ✅ fix the background */
-
-}
-
-.trailer video {
-    border: #F3E9DC 4px dotted;
-    border-radius: 100px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
 }
 
 
-.project-intro {
-    text-align: center
-}
-
-.project-container {
-    border: #F3E9DC 2px solid;
-    color: #F3E9DC;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: #502F4C;
-    background: linear-gradient(to bottom left, #70587C, #502F4C);
-
-}
-
-.project-container .project-name {
-    font-family: "Poiret One", sans-serif;
-    font-size: 18px;
-    background-color: #C8B8DB;
-    color: #502F4C;
-    border: #F3E9DC 2px solid;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-.project-container .project-name:hover {
-    background-color: #8A00C4;
-    color: #F3E9DC;
-    transform: scale(1.1);
-}
-
-.project-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s ease;
-}
-
-/* When expanded */
-.project-container.open .project-details {
-    max-height: 3000px;
-    /* large enough to fit content */
-}
-
-.img-carousel {
-    position: relative;
-    width: 800px;
-    overflow: hidden;
-    margin: auto;
-    border: #F3E9DC 4px dotted;
-    border-radius: 100px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.img-carousel img {
-    width: 800px;
-    height: 500px;
-    flex-shrink: 0;
-}
-
-.project-imgs {
+.content {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    /* smooth slide */
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 40px;
+
+    flex: 1;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 100%;
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.trailer {
-    font-family: "Poiret One", sans-serif;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.trailer iframe {
-    border: #F3E9DC 4px dotted;
-    border-radius: 100px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.project-info li a {
-    color: #F3E9DC;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid #F3E9DC;
-    cursor: pointer;
-}
-
-.project-info li a:hover {
-    /* "Blow up" effect */
-    color: #8A00C4;
-    /* Change button color */
-    border-color: #8A00C4;
-}
-
-.project-info li {
-  text-decoration: none;
-}
-
-.footer {
+.header-content {
     display: flex;
-    background: #C8B8DB;
-    color: #502F4C;
-    text-align: center;
-    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.extended-content {
+
+    clip-path: inset(0% 0% 0% 0%);
+}   
+
+
+
+.nav-bar {
+    color: #FDF2FF;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;                                           
-}
+    justify-content: center;
+    position: relative;
 
-.main-content {
-    margin: 20px;
-    padding: 20px;
-    margin-top: 75px;
-    background-color: #C8B8DB;
+    z-index: 2;
+
+    background: #131313;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    font-family: "Volkhov", serif;
-    color: #000000;
-    max-width: 1200px;
-    min-width: 50%;
-    border: #F3E9DC 2px solid;
-    margin-bottom: 75px;
-}
+    border: #FDF2FF 4px dotted;
 
-.main-content h3 {
-    color: #000;
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
+    font-family: "Volkhov", serif;
     text-align: center;
+    font-size: 28px;
+
+    width: 40%;
+    padding: 20px;
+    gap: 50px;
+
+
 }
 
-.main-content p {
+.nav-bar a {
+    color: #FDF2FF;
+    text-decoration: none;
+    margin: 0 15px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+
+}
+
+.nav-bar a:hover {
+    transform: scale(1.2);
+    /* "Blow up" effect */
+    color: #A245FF;
+    /* Change button color */
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    /* space below text */
+    width: 100%;
+    height: 2px;
+    background-color: #A245FF;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+
+.title-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+    color: #FDF2FF;
     font-family: "Volkhov", serif;
-    font-weight: 400;
-    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+}
+
+.title-intro h1 {
+    font-family: "Poiret One", cursive;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 20px;
+}
+
+.lane {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 40px;
+    background: linear-gradient(to bottom left, #280B42E6, #331087E6, #B623FFE6);
+    color: #FDF2FF;
+    font-family: "Volkhov", serif;
+
+
+    clip-path: polygon(10% 0,
+            100% 0,
+            90% 100%,
+            0% 100%);
+
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:nth-child(even) {
+    clip-path: polygon(0 0,
+            90% 0,
+            100% 100%,
+            10% 100%);
+}
+
+.project-card h2 {
+    margin-top: 20px;
+    font-family: "Poiret One", cursive;
+    font-size: 28px;
+
+}
+
+.project-card p {
+    font-family: "Volkhov", serif;
+    text-align: center;
     font-size: 18px;
-    margin-bottom: 20px;
-    padding: 10px;
-    line-height: 1.5;
+    padding: 0px 20px 25px 20px;
+}
+
+.project-card img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-card.expanded .project-full {
+    max-height: 550px;
+    /* large enough to fit content */
+    padding-bottom: 50px;
+    padding-top: 20px;
+
+}
 
 
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-full {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project-full a {
+    color: #FFB625;
+    margin: 0 15px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+
+}
+
+.expand-btn {
+    font-family: "Volkhov", serif;
+    font-size: 15px;
+
+    margin-top: auto;
+    padding: 10px 15px;
+    background: #131313;
+    color: #FDF2FF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+.expand-btn:hover {
+    transform: scale(1.1);
+    color: #A245FF;
+}
+
+
+.right-lane {
+    margin-top: 120px;
+}
+
+@media (max-width: 900px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-lane {
+        margin-top: 0;
+    }
 }

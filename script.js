@@ -33,3 +33,16 @@ document.querySelectorAll('.project-name').forEach(button => {
     project.classList.toggle('open');
   });
 });
+
+
+document.querySelectorAll(".expand-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".project-card");
+    card.classList.toggle("expanded");
+
+    button.textContent =
+      card.classList.contains("expanded")
+        ? "View Less"
+        : "View More";
+  });
+});
