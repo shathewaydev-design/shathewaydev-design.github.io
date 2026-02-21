@@ -87,43 +87,6 @@ body {
     width: 100%;
 }
 
-.title-logo {
-    color: #502F4C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border: #F3E9DC 8px dotted;
-    border-radius: 25px;
-
-    /* Smooth animation */
-    transition:
-        transform 0.25s ease,
-        background-color 0.25s ease;
-}
-
-.title-logo h1 {
-    margin: 0;
-    font-size: 38px;
-}
-
-.title-logo h2 {
-    border-top: #502F4C 2px solid;
-    margin: 0;
-    font-size: 22px;
-}
-
-.title-logo:hover {
-    transform: scale(1.05);
-    /* Slightly enlarge on hover */
-    transition: transform 0.3s ease;
-    border: #8A00C4 8px dotted;
-}
-
 .footer {
     position: absolute;
     bottom: 0;
