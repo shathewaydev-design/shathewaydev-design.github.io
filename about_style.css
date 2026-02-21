@@ -47,4 +47,19 @@ body {
   align-self: flex-start;
 }
 
+@media (max-width: 900px) {
+
+    .extended-container {
+        max-width: 350px;
+        padding: 20px;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    .float-img {
+        max-width: 350px;
+        margin: 0 0 20px 0; /* adjust spacing for smaller screens */
+    }
+}
+
 
