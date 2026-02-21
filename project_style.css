@@ -35,6 +35,21 @@ body {
 }   
 
 
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: 0.3s ease;
+}
+
 
 .nav-bar {
     color: #FDF2FF;
@@ -250,4 +265,36 @@ body {
     .right-lane {
         margin-top: 0;
     }
+
+    .nav-bar {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #131313;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 24px;
+    gap: 20px;
+    padding: 20px 0;
+
+    /* Hide by default */
+    transform: translateY(-200%);
+    transition: transform 0.4s ease;
+  }
+
+  .nav-bar.active {
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .title-intro {
+    padding: 20px;
+  }
+
+
 }
